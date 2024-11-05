@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поисковые системы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ebd4d4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: #463333;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 400px;
+            width: 100%;
+            background: #835858;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #d1d1d1;
+            border-radius: 4px;
+            background-color: #fff0f0;;
+            font-size: 1rem;
+            color: #333;
+            margin-right: 10px;
+            transition: border-color 0.2s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #b3b3b3;
+        }
+
+        input[type="submit"] {
+            padding: 10px 15px;
+            font-size: 1rem;
+            background: #9c674a;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background: #d29369;
+        }
+
+        @media (max-width: 500px) {
+            form {
+                flex-direction: column;
+            }
+
+            input[type="text"] {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+            }
+
+            input[type="submit"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Google</h1>
+<form action="https://www.google.ru/search">
+    <input type="text" name="q" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Yandex</h1>
+<form action="https://ya.ru/search">
+    <input type="text" name="text" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Yahoo!</h1>
+<form action="https://search.yahoo.com/search">
+    <input type="text" name="p" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Swisscows</h1>
+<form action="https://swisscows.com/ru/web?query">
+    <input type="text" name="query" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Bing</h1>
+<form action="https://www.bing.com/search?q">
+    <input type="text" name="q" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Nigma</h1>
+<form action="https://www.nigma.net.ru/index.php?query">
+    <input type="text" name="query" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>DuckDuckGo</h1>
+<form action="https://duckduckgo.com/">
+    <input type="text" name="q" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Baidu</h1>
+<form action="https://www.baidu.com/s">
+    <input type="text" name="wd" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Ask.com</h1>
+<form action="https://www.ask.com/web">
+    <input type="text" name="q" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+<h1>Openverse</h1>
+<form action="https://openverse.org/search/?q">
+    <input type="text" name="q" placeholder="Request...">
+    <input type="submit" value="Search">
+</form>
+</body>
+</html>
